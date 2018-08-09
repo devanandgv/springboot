@@ -11,17 +11,17 @@ Spring Profiles provide a way to segregate parts of your application configurati
 ##### 3. JVM System Parameter #####		
 &nbsp;&nbsp;&nbsp;&nbsp;-Dspring.profiles.active=dev
 ##### 4. Web.xml ##### 
-				<context-param>
-    				<param-name>spring.profiles.active</param-name>
-    				<param-value>dev</param-value>
-				</context-param>         
+		<context-param>
+    		<param-name>spring.profiles.active</param-name>
+    		<param-value>dev</param-value>
+		</context-param>         
 ##### 5. WebApplicationInitializer #####
    				
-				@Configuration
-				public class MyWebApplicationInitializer implements WebApplicationInitializer {
-	   			@Override
-	   			public void onStartup(ServletContext servletContext) throws ServletException {
-	        			servletContext.setInitParameter("spring.profiles.active", "dev");
-	    			}
-				}                                          
+		@Configuration
+		public class MyWebApplicationInitializer implements WebApplicationInitializer {
+	   		@Override
+	   		public void onStartup(ServletContext servletContext) throws ServletException {
+	        		servletContext.setInitParameter("spring.profiles.active", "dev");
+	    	}
+		}                                          
 				
