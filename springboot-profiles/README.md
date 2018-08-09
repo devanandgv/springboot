@@ -1,6 +1,6 @@
-# Spring Boot Profiles
+## Spring Boot Profiles
 
-Spring Profiles provide a way to segregate parts of your application configuration and make it be available only in certain environments
+Spring Profiles provide a way to segregate parts of our application configuration and make it be available only in certain environments
 
 #### Adding Active profiles  
 
